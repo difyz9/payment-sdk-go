@@ -2,6 +2,15 @@
 
 统一支付平台的官方 Golang SDK，支持支付宝、微信支付、PayPal 等多种支付方式。
 
+## 📚 文档导航
+
+- [快速开始](#快速开始) - 5分钟快速集成
+- [API 文档](#api-文档) - 完整的 API 参考
+- [使用示例](#使用示例) - 各种支付方式的示例代码
+- [高级配置](#高级配置) - 自定义返回地址、HTTP客户端等
+- [ReturnURL 详细指南](./RETURN_URL_GUIDE.md) - 支付宝自定义返回地址完整说明
+- [更新日志](./CHANGELOG.md) - 版本更新记录
+
 ## 特性
 
 - ✅ 简洁易用的 API 设计
@@ -222,6 +231,9 @@ paymentData, err := client.CreatePayment(req)
   - ReturnURL 必须是公网可访问的 HTTPS 地址（生产环境）
   - 支付宝会在 URL 后面追加支付结果参数
   - 这是同步返回，仅用于页面跳转，订单状态以异步通知为准
+  - 建议在返回页面中调用 `QueryOrder()` 再次验证订单状态
+
+📖 **详细说明请参考：** [ReturnURL 使用指南](./RETURN_URL_GUIDE.md)
 
 ### 微信支付
 
