@@ -24,17 +24,7 @@
 
 ## 安装
 
-### 方式一：直接复制（推荐用于快速集成）
-
-将 `payment-sdk` 目录复制到你的项目中：
-
-```bash
-cp -r payment-sdk /path/to/your/project/pkg/
-```
-
-### 方式二：Go Modules（推荐用于生产环境）
-
-如果将此 SDK 发布到 Git 仓库，可以通过 go get 安装：
+通过 go get 安装：
 
 ```bash
 go get github.com/difyz9/payment-sdk
