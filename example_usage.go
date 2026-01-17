@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	paymentsdk "github.com/difyz9/pay-unify/examples/payment-sdk"
+	paymentsdk "github.com/difyz9/payment-sdk-go"
 )
 
 func main() {
