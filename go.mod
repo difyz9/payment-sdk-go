@@ -1,4 +1,4 @@
-module github.com/difyz9/payment-sdk
+module github.com/difyz9/payment-sdk-go
 
 go 1.19
 

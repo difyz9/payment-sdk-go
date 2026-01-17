@@ -27,7 +27,7 @@
 通过 go get 安装：
 
 ```bash
-go get github.com/difyz9/payment-sdk
+go get github.com/difyz9/payment-sdk-go
 ```
 
 ## 快速开始
@@ -39,7 +39,7 @@ package main
 
 import (
     "fmt"
-    "github.com/difyz9/payment-sdk" // 或使用本地路径
+    "github.com/difyz9/payment-sdk-go" // 或使用本地路径
 )
 
 func main() {

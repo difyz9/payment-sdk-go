@@ -19,7 +19,7 @@
 ### 🚀 快速使用
 
 ```go
-import paymentsdk "github.com/difyz9/payment-sdk"
+import paymentsdk "github.com/difyz9/payment-sdk-go"
 
 // 创建客户端
 client := paymentsdk.NewClient(&paymentsdk.Config{

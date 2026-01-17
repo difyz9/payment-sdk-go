@@ -247,7 +247,7 @@ package main
 
 import (
     "fmt"
-    paymentsdk "github.com/difyz9/payment-sdk"
+    paymentsdk "github.com/difyz9/payment-sdk-go"
 )
 
 func CreateOrder() {
@@ -286,7 +286,7 @@ package main
 import (
     "fmt"
     "net/http"
-    paymentsdk "github.com/difyz9/payment-sdk"
+    paymentsdk "github.com/difyz9/payment-sdk-go"
 )
 
 var client *paymentsdk.Client
