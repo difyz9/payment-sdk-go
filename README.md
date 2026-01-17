@@ -28,7 +28,7 @@ cp -r payment-sdk /path/to/your/project/pkg/
 如果将此 SDK 发布到 Git 仓库，可以通过 go get 安装：
 
 ```bash
-go get github.com/yourusername/payment-sdk
+go get github.com/difyz9/payment-sdk
 ```
 
 ## 快速开始
