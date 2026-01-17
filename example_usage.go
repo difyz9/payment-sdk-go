@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	paymentsdk "github.com/difyz9/payment-sdk-go"
+	psdk "github.com/difyz9/payment-sdk-go"
 )
 
 func main() {
@@ -13,7 +13,7 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	// 创建支付客户端
-	client := paymentsdk.NewClient(&paymentsdk.Config{
+	client := psdk.NewClient(&psdk.Config{
         BaseURL:   "https://api.example.com",
 	    AppID:     "your-app-id",
         AppSecret: "your-app-secret",
@@ -23,10 +23,10 @@ func main() {
 
 	// ========== 示例 1: 创建支付宝支付订单 ==========
 	fmt.Println("【示例 1】创建支付宝支付订单")
-	paymentReq := &paymentsdk.PaymentRequest{
+	paymentReq := &psdk.PaymentRequest{
 		Subject:   "VIP会员-月卡",
 		Amount:    0.01,
-		PayWay:    paymentsdk.PayWayAlipay,
+		PayWay:    psdk.PayWayAlipay,
 		ReturnURL: "https://mystore.com/payment/success", // 支付成功后跳转的URL
 		OrderType: "vip",
 		UserID:    "user_12345",
